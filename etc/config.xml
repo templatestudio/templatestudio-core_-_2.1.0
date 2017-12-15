@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TemplateStudio UK
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <templatestudio>
+            <notification>
+                <enabled>1</enabled>
+                <use_https>0</use_https>
+                <frequency>24</frequency>
+            </notification>
+        </templatestudio>
+    </default>
+</config>

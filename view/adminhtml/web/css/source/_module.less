@@ -1,0 +1,117 @@
+/**
+    Templatestudio UK
+ */
+
+@templatestudio-core-icons-admin__font-name-path: '@{baseDir}Templatestudio_Core/fonts/templatestudio-backend-icon';
+@templatestudio-core-icons-admin__font-name: 'templatestudio-backend-icon';
+
+.lib-font-face(
+    @family-name: @templatestudio-core-icons-admin__font-name,
+    @font-path: @templatestudio-core-icons-admin__font-name-path,
+    @font-weight: @font-weight__light,
+    @font-style: normal
+);
+
+.admin__menu {
+    .item-templatestudio {
+        &.level-0 {
+            > a {
+                &:before {
+                    content:'\e900';
+                    font-family: @templatestudio-core-icons-admin__font-name;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 6.2rem;
+                    height: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-size: 6.2rem;
+                    position: relative;
+                }
+
+                > span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.accordion {
+    #templatestudio_extensions {
+        label {
+            .module {
+                display: inline-block;
+                margin-right: .5rem;
+                vertical-align: middle;
+
+                &:before {
+                    color: @color-blue-pure;
+                    content: @icon-info__content;
+                    font-family: @icons-admin__font-name;
+                    font-size: 1.9rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    height: auto;
+                    line-height: inherit;
+                    speak: none;
+                    text-shadow: none;
+                    top: 50%;
+                    width: auto
+                }
+
+                &.module-upgrade {
+                    &:before {
+                        color: @color-blue-pure;
+                        content: @icon-updater__content;
+                    }
+                }
+
+                &.module-success {
+                    &:before {
+                        color: @color-green-apple;
+                        content: @icon-check-mage__content;
+                    }
+                }
+
+                &.module-warning {
+                    &:before {
+                        color: @color-phoenix;
+                        content: @icon-warning__content;
+                    }
+                }
+            }
+
+            .value {
+                &.with-tooltip {
+                    .control-value {
+                        float: left;
+                        margin-right: 2rem;
+                    }
+                    .admin__field-value {
+                        padding-top: .7rem;
+                    }
+                }
+            }
+
+            .admin__field-value {
+                padding-top: .4rem;
+            }
+        }
+        .form-list {
+            max-width: 75%;
+        }
+    }
+
+    .form-inline {
+        #templatestudio-core-quote {
+            float: right;
+            max-width: 25%;
+            padding: 0;
+
+            &:before {
+                content: none;
+            }
+        }
+    }
+}

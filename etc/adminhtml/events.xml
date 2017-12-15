@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TemplateStudio UK
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="controller_action_predispatch">
+        <observer name="tscore_feed_notification" instance="Templatestudio\Core\Observer\PredispatchAdminActionControllerObserver" />
+        <observer name="tscore_check_extensions" instance="Templatestudio\Core\Observer\PredispatchAdminActionControllerObserver" />
+    </event>
+</config>

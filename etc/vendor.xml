@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TemplateStudio UK
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Templatestudio_Core:etc/vendor.xsd">
+    <org>Template Studio UK</org>
+    <address>
+        <adr code="default">
+            <property code="street">21 Hockliffe Brae</property>
+            <property code="locality">Walnut Tree</property>
+            <property code="region">Milton Keynes</property>
+            <property code="postalcode">MK7 7BG</property>
+            <property code="country">United Kingdom</property>
+        </adr>
+    </address>
+    <url>
+        <property code="vendor">http://www.templatestudio.com/</property>
+        <property code="feed">http://www.templatestudio.com/feed/file.rss</property>
+        <property code="extension">http://www.templatestudio.com/extmanager/extension/feed/</property>
+        <property code="license">http://www.templatestudio.com/extmanager/extension/license/</property>
+        <property code="quote">http://www.templatestudio.com/quote/</property>
+    </url>
+    <email>
+        <property code="sales">sales@templatestudio.com</property>
+        <property code="contact">contact@templatestudio.com</property>
+    </email>
+    <phone>
+        <property code="default">+44 1 908 766443</property>
+        <property code="us">+1 347 284 0154</property>
+    </phone>
+</config>

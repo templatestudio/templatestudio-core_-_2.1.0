@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TemplateStudio UK
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="templatestudio" translate="label" sortOrder="200">
+			<label>Templatestudio</label>
+		</tab>
+		<section id="templatestudio" translate="label" type="text" sortOrder="999" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label>General Information</label>
+			<tab>templatestudio</tab>
+			<resource>Templatestudio_Core::config_info</resource>
+			<group id="extensions" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Installed Extensions</label>
+				<frontend_model>Templatestudio\Core\Block\Adminhtml\System\Config\Form\Fieldset\Modules\Templatestudio</frontend_model>
+				<attribute type="expanded">1</attribute>
+			</group>
+			<group id="notification" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Notifications</label>
+				<field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="use_https" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Use HTTPS to Get Feed</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<depends>
+						<field id="enabled">1</field>
+					</depends>
+				</field>
+				<field id="frequency" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Update Frequency</label>
+					<source_model>Magento\AdminNotification\Model\Config\Source\Frequency</source_model>
+					<depends>
+						<field id="enabled">1</field>
+					</depends>
+				</field>
+				<field id="last_update" translate="label" type="label" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
+					<label>Last Update</label>
+					<frontend_model>Templatestudio\Core\Block\Adminhtml\System\Config\Form\Field\Notification</frontend_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

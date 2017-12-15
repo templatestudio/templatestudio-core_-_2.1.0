@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    TemplateStudio UK
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Templatestudio_Core::templatestudio" title="Template Studio" module="Templatestudio_Core" sortOrder="79" action="adminhtml/system_config/edit/section/templatestudio" resource="Templatestudio_Core::admin" />
+    </menu>
+</config>
